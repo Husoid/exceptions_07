@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
 
 }
 object WallService {
@@ -23,13 +23,13 @@ object WallService {
 
 data class Post (
     val id: Int,
-    val text: String,
-    val comment: String,
-    val likes: Likes,
-    val reposts: Reposts,
-    val views: Int,
-    val postType: PostType,
-    val geo: Geo
+    val text: String?,
+    val comment: String?,
+    val likes: Likes?,
+    val reposts: Reposts?,
+    val views: Int?,
+    val postType: PostType?,
+    val geo: Geo?
 )
 
 data class Likes (
