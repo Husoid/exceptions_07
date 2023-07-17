@@ -7,7 +7,7 @@ class WallServiceTest {
     @Test
     fun addFinish() {
         val service = WallService
-        val post = Post(1, null,  null, null, null, null, null, null)
+        val post = Post(1, null,  null, null, null, null, null, null, null)
         val result = service.add(post)
         assertNotNull(result)
     }
@@ -15,7 +15,7 @@ class WallServiceTest {
     @Test
     fun updateExisting() {
         val service = WallService
-        val post = Post(1, null,  null, null, null, null, null, null)
+        val post = Post(1, null,  null, null, null, null, null, null, null)
         service.add(post)
         val result = service.update(post)
         assertEquals(true, result)
@@ -24,7 +24,7 @@ class WallServiceTest {
     @Test
     fun updateNoExisting() {
         val service = WallService
-        val post = Post(100, null,  null, null, null, null, null, null)
+        val post = Post(100, null,  null, null, null, null, null, null, null)
         val result = service.update(post)
         assertEquals(false, result)
     }

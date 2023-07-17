@@ -29,7 +29,8 @@ data class Post (
     val reposts: Reposts?,
     val views: Int?,
     val postType: PostType?,
-    val geo: Geo?
+    val geo: Geo?,
+    val attachment: List<Attachment>?
 )
 
 data class Likes (
