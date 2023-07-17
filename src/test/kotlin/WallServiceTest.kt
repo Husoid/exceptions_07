@@ -16,6 +16,7 @@ class WallServiceTest {
     fun updateExisting() {
         val service = WallService
         val post = Post(1, null,  null, null, null, null, null, null)
+        service.add(post)
         val result = service.update(post)
         assertEquals(true, result)
     }
