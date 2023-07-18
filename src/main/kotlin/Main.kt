@@ -2,10 +2,10 @@ fun main() {
     var a = WallService
     a.add(Post(1, "ffff", null, null, null, null, null, null, null))
     a.add(Post(2, "ffff", null, null, null, null, null, null, null))
-    a.createComment(3, Comment(1, 1, null, null, null, null ))
+    a.createComment(1, Comment(1, 1, null, null, null, null ))
 }
 
-class PostNotFoundException(message: String): ArrayIndexOutOfBoundsException(message) //  bIndexOutOfBoundsException(message) //  RuntimeException(message)
+class PostNotFoundException(message: String):  RuntimeException(message)
 object WallService {
     private var posts = emptyArray<Post>()
     private var comments = emptyArray<Comment>()
